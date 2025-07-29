@@ -54,3 +54,58 @@
     text-decoration: none; /*to keep the text decoration consistent*/
     outline: none; /*to remove focus outline for better aesthetics*/
 }
+
+main, .hero{
+    padding-top: 70px; /*to ensure content is not hidden behind the fixed header*/
+}
+
+.hero{
+    background: #F0E4D3; /*background color for the hero section*/
+    padding: 50px 0; /*padding for spacing*/
+    /*text-align: center; /*to center the content*/
+    height: calc(100vh - 70px + 300px); /*to fill the viewport height minus the header height*/
+}
+
+.big{
+    font-family: 'Cormorant'; /*font family for the heading*/
+    font-size: 2rem; /*font size for the heading*/
+    font-weight: normal;
+    color: #000; /*color for the heading*/
+    padding: 0 100px 20px 60px; 
+    margin-top: 0;
+    margin-bottom: 2px; /*margin below the heading*/
+}
+
+.line{
+    width: 1130px; /*width of the line*/
+    height: 2px; /*height of the line*/
+    background-color: #000; /*color of the line*/
+    margin: 0 30px 20px 60px; /*margin for spacing*/
+}
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-row h1{
+    font-family: 'Cormorant'; /*font family for the subheading*/
+    font-size: 2rem; /*font size for the subheading*/
+    font-weight: bold;
+    color: #000; /*color for the subheading*/
+    max-width: 550px;
+    padding: 0 50px 20px 60px; 
+    margin-top: 0;
+    margin-bottom: 20px; /*margin below the subheading*/
+}
+
+.header-row p{
+    font-family: 'lato', sans-serif; /*font family for the description*/
+    font-size: 1.25rem; /*font size for the description*/
+    color: #000; /*color for the description*/
+    max-width: 700px;
+    line-height: 1.5;;
+    padding: 0 50px 20px 60px; 
+    margin-top: 0;
+    margin-bottom: 20px; /*margin below the description*/
+}
