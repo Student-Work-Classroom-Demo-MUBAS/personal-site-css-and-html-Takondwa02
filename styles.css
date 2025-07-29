@@ -1,0 +1,56 @@
+*,*::before, *::after {
+    box-sizing: border-box; /*to ensure padding and border are included in element's total width and height*/
+}
+
+.header{
+    position: relative; 
+    top: 0; /*to position the header at the top*/
+    width: 100%; /*full width of the page*/
+    background: #F8F3ED;
+    height: 100px;
+    /*box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); /*to add a subtle shadow for depth*/
+    z-index: 999; /*to ensure it stays above other content*/
+}
+
+.navbar-container{
+    display: flex; /*to use flexbox for layout*/
+    justify-content: space-between; /*to push name to the left and links to the right*/
+    align-items: center; /*to center items vertically*/
+    margin: 0 auto; /*to center the container*/
+    width: 100%; /*to limit the width of the navbar*/
+    padding: 25px; /*padding for spacing*/
+}
+
+.site-name{ /*.header .navbar .navbar-container .navbar-left*/
+    color: #000;
+    font-family: 'lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 0 0 35px;
+    letter-spacing: 0.05em; /*to add a slight spacing between letters*/
+}
+
+.navbar-right{
+    list-style: none; /*to remove default list styling*/
+    display: flex; /*to use flexbox for layout*/
+    gap: 20px; /*spacing between links*/
+    margin: 0; /*to remove default margin*/
+    padding: 10px 40px 0 0; /*to remove default padding*/
+}
+
+.navbar-right li a{
+    color: #000; 
+    text-decoration: none; /*to remove underline from links*/
+    font-family: 'lato', sans-serif;
+    font-size: 1rem; /*font size for links*/
+    font-weight: bold; /*to make the links slightly bolder*/
+    /*border-radius: 4px; /*to give links a rounded corner*/
+    transition: color 0.2s ease; /*smooth transition for hover effect*/
+    /*padding: 8px 0; /*padding for clickable area*/
+}
+
+.navbar-right li a:hover, .navbar-right li a:focus{
+    color: #7d8e34; /*change color on hover*/
+    text-decoration: none; /*to keep the text decoration consistent*/
+    outline: none; /*to remove focus outline for better aesthetics*/
+}
