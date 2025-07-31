@@ -63,7 +63,7 @@ main, .hero{
     background: #F0E4D3; /*background color for the hero section*/
     padding: 50px 0; /*padding for spacing*/
     /*text-align: center; /*to center the content*/
-    height: calc(100vh - 70px + 300px); /*to fill the viewport height minus the header height*/
+    height: calc(100vh - 70px + 500px); /*to fill the viewport height minus the header height*/
 }
 
 .big{
@@ -90,22 +90,79 @@ main, .hero{
 
 .header-row h1{
     font-family: 'Cormorant'; /*font family for the subheading*/
-    font-size: 2rem; /*font size for the subheading*/
+    font-size: 1.75rem; /*font size for the subheading*/
     font-weight: bold;
     color: #000; /*color for the subheading*/
     max-width: 550px;
     padding: 0 50px 20px 60px; 
-    margin-top: 0;
+    margin-top: -90px;
     margin-bottom: 20px; /*margin below the subheading*/
 }
 
 .header-row p{
     font-family: 'lato', sans-serif; /*font family for the description*/
-    font-size: 1.25rem; /*font size for the description*/
+    font-size: 1.15rem; /*font size for the description*/
     color: #000; /*color for the description*/
     max-width: 700px;
     line-height: 1.5;;
     padding: 0 50px 20px 60px; 
     margin-top: 0;
     margin-bottom: 20px; /*margin below the description*/
+}
+
+.rect-container{
+    position:relative;
+    display: flex; /*to use flexbox for layout*/
+    justify-content: center; /*to center the rectangles*/
+    align-items: center; /*to center items vertically*/
+    width: 700px;
+    height: 700px;
+    margin: -70px auto 0;
+}
+
+/*.rectangle{
+   position: absolute;
+   height: 300px;
+   width: 350px;
+   background-color: #9fa292;
+   transform-origin: center;
+}*/
+
+.rect1{
+    background-color: #A8864F;
+    position: absolute;
+    transform: rotate(174deg);
+    width: 600px;
+    height: 500px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*to add a subtle shadow for depth*/
+    transform-origin: center center;
+    z-index: 1;
+    /*margin: 70px 100px 50px 100px;
+    /*top: 50%;
+    left: 50%;
+    */
+}
+
+.rect2{
+    background-color: #E6D1B0;
+    position: absolute;
+    transform: rotate(6deg);
+    width: 600px;
+    height: 500px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+    transform-origin: center center;
+    z-index: 2;
+    /*top: 60%;
+    left: 60%;*/
+    
+}
+
+.image{
+    position: absolute;
+    width: 600px; /*width of the image*/
+    height: autopx; /*height of the image*/
+    /*object-fit: contain;*/
+    z-index: 3;
+    /*border-radius: 50%; /*to make the image circular*/
+    /*overflow: hidden; /*to hide overflow content*/
 }
