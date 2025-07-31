@@ -15,6 +15,13 @@ body{
     z-index: 999; /*to ensure it stays above other content*/
 }
 
+@media (max-width: 768px) {
+    .header{
+        height: 80px; /*to adjust height for smaller screens*/
+        padding: 0 10px;
+    }
+}
+
 .navbar-container{
     display: flex; /*to use flexbox for layout*/
     justify-content: space-between; /*to push name to the left and links to the right*/
@@ -24,13 +31,33 @@ body{
     padding: 25px; /*padding for spacing*/
 }
 
+@media (max-width: 768px) {
+    .navbar-container{
+        flex-wrap: wrap;
+        padding: 15px 10px;
+        justify-content: center; 
+    }
+}
+
 .site-name{ /*.header .navbar .navbar-container .navbar-left*/
     color: #000;
     font-family: 'lato', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 0 0 0 35px;
-    letter-spacing: 0.05em; /*to add a slight spacing between letters*/
+    letter-spacing: 0.05em; 
+}
+
+@media (max-width: 768px) {
+    .site-name{
+        font-size: 1.2rem; 
+        text-align: center;
+        padding: 0 0 0 10px;
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+    
 }
 
 .navbar-right{
@@ -41,20 +68,43 @@ body{
     padding: 10px 40px 0 0; /*to remove default padding*/
 }
 
+@media (max-width: 768px) {
+    .navbar-right{
+        flex-direction: column; /*to stack links vertically on smaller screens*/
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-right{
+       gap: 6px; 
+    }
+}
+
 .navbar-right li a{
     color: #000; 
     text-decoration: none; /*to remove underline from links*/
     font-family: 'lato', sans-serif;
-    font-size: 1rem; /*font size for links*/
-    font-weight: bold; /*to make the links slightly bolder*/
-    /*border-radius: 4px; /*to give links a rounded corner*/
+    font-size: 1rem; 
+    font-weight: bold; 
+    /*border-radius: 4px;*/
     transition: color 0.2s ease; /*smooth transition for hover effect*/
-    /*padding: 8px 0; /*padding for clickable area*/
+    /*padding: 8px 0; */
+}
+
+@media (max-width: 768px) {
+    .navbar-right li a{
+        font-size: 0.9rem; 
+    }
 }
 
 .navbar-right li a:hover, .navbar-right li a:focus{
-    color: #7d8e34; /*change color on hover*/
-    text-decoration: none; /*to keep the text decoration consistent*/
+    color: #7d8e34; 
+    text-decoration: none; 
     outline: none; /*to remove focus outline for better aesthetics*/
 }
 
@@ -62,11 +112,25 @@ main, .hero{
     padding-top: 70px; /*to ensure content is not hidden behind the fixed header*/
 }
 
+@media (max-width: 768px) {
+    main, .hero{
+        padding-top: 60px; /*to adjust padding for smaller screens*/
+    }
+}
+
 .hero{
     background: #F0E4D3; /*background color for the hero section*/
     padding: 50px 0; /*padding for spacing*/
     /*text-align: center; /*to center the content*/
     height: calc(100vh - 70px + 500px); /*to fill the viewport height minus the header height*/
+}
+
+@media (max-width: 768px) {
+    .hero{
+        height: auto;
+        padding: 30px 10px;
+        /*height: calc(100vh - 60px + 400px); /*to adjust height for smaller screens*/
+    }
 }
 
 .big{
@@ -79,16 +143,46 @@ main, .hero{
     margin-bottom: 2px; /*margin below the heading*/
 }
 
+@media (max-width: 768px) {
+    .big{
+        font-size: 1.5rem; 
+        text-align: center;
+        padding: 0 20px 15px 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .big{
+        font-size: 1.2rem; 
+        padding: 0 10px 10px 10px; 
+    }
+}
+
 .line{
     width: 1130px; /*width of the line*/
     height: 2px; /*height of the line*/
     background-color: #000; /*color of the line*/
     margin: 0 30px 20px 60px; /*margin for spacing*/
 }
+
+@media (max-width: 768px) {
+    .line{
+        width: 90%; /*to adjust width for smaller screens*/
+        margin: 0 auto 20px; /*to center the line*/
+    }
+}
+
 .header-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .header-row{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .header-row h1{
@@ -102,6 +196,23 @@ main, .hero{
     margin-bottom: 20px; /*margin below the subheading*/
 }
 
+@media (max-width: 768px) {
+    .header-row h1{
+        font-size: 1.5rem; 
+        text-align: center;
+        padding: 0 20px 15px 20px; 
+        margin-top: -70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-row h1{
+        font-size: 1.2rem; 
+        padding: 0 10px 10px 10px; 
+        margin-top: -50px;
+    }
+}
+
 .header-row p{
     font-family: 'lato', sans-serif; /*font family for the description*/
     font-size: 1.15rem; /*font size for the description*/
@@ -113,14 +224,56 @@ main, .hero{
     margin-bottom: 20px; /*margin below the description*/
 }
 
+@media (max-width: 768px) {
+    .header-row p{
+        font-size: 1rem; 
+        text-align: center;
+        padding: 0 20px 15px 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header-row p{
+        font-size: 0.9rem; 
+        padding: 0 10px 10px 10px; 
+    }
+}
+
 .rect-container{
     position:relative;
     display: flex; /*to use flexbox for layout*/
     justify-content: center; /*to center the rectangles*/
     align-items: center; /*to center items vertically*/
-    width: 700px;
-    height: 700px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 800px;
+    /*padding-top: 100%; /*to maintain aspect ratio*/
+    aspect-ratio: 7/7;
     margin: -70px auto 0;
+}
+
+@media (max-width: 768px) {
+    .rect-container{
+        max-width: 800px;
+        max-height: 800px;
+        aspect-ratio: 7/7;
+        width: 90%;
+        /*height: auto;*/
+        margin: -40px auto 0;
+        position: relative;
+    }
+}
+
+@media (max-width: 480px) {
+    .rect-container{
+        max-width: 670px;
+        max-height: 670px;
+        aspect-ratio: 7/7;
+        width: 95%;
+        /*height: auto;*/
+        margin: -20px auto 0;
+        position: relative;
+    }
 }
 
 /*.rectangle{
@@ -131,14 +284,21 @@ main, .hero{
    transform-origin: center;
 }*/
 
-.rect1{
-    background-color: #A8864F;
+.rect1, .rect2{
     position: absolute;
-    transform: rotate(174deg);
-    width: 600px;
+    width: 85%;
+    max-width: 600px;
+    max-height: 500px;
+    /*width: 600px;*/
     height: 500px;
     /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*to add a subtle shadow for depth*/
     transform-origin: center center;
+}
+
+.rect1{
+    background-color: #A8864F;
+    transform: rotate(174deg);
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*to add a subtle shadow for depth*/
     z-index: 1;
     /*margin: 70px 100px 50px 100px;
     /*top: 50%;
@@ -146,33 +306,72 @@ main, .hero{
     */
 }
 
+@media (max-width: 768px) {
+    .rect1{
+        transform: rotate(174deg);
+    }
+}
+
 .rect2{
     background-color: #E6D1B0;
-    position: absolute;
     transform: rotate(6deg);
-    width: 600px;
-    height: 500px;
     /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
-    transform-origin: center center;
     z-index: 2;
     /*top: 60%;
     left: 60%;*/
     
 }
 
+@media (max-width: 768px) {
+    .rect2{
+        transform: rotate(6deg);
+    }
+}
+
 .image{
     position: absolute;
-    width: 600px; /*width of the image*/
-    height: autopx; /*height of the image*/
-    /*object-fit: contain;*/
+    object-fit: contain;
     z-index: 3;
+    width: 600px;
+    height: autopx;
     /*border-radius: 50%; /*to make the image circular*/
     /*overflow: hidden; /*to hide overflow content*/
 }
 
+@media (max-width: 768px) {
+    .rect1, .rect2, .image{
+        width: 100%;
+        max-width: 600px;
+        max-height: 500px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .rect1, .rect2, .image{
+        width: 95%;
+        max-width: 470px;
+        max-height: 370px;
+    }
+}
+
+/*@media (max-width: 768px) {
+    .image{
+        /*margin: 10px 20px 10px 20px;*/
+        /*top: 70%;
+        left: 70%;*/
+   /* }
+}*/
+
 section{
     padding: 80px 20px;
     /*min-height: ;*/
+}
+
+@media (max-width: 768px) {
+    section{
+        padding: 60px 10px; /*to adjust padding for smaller screens*/
+    }
 }
 
 #contact{
@@ -183,6 +382,13 @@ section{
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    #contact{
+        font-size: 1.5rem; 
+        padding: 30px 10px; 
+    }
+}
+
 .contact-info{
     display: flex;
     justify-content: space-around;
@@ -190,39 +396,33 @@ section{
     gap: 20px;
 }
 
-#email{
+@media (max-width: 768px) {
+    .contact-info{
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+}
+
+#email, #address, #phone{
     font-family: 'lato', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     color: #000;
     background-color: #F0E4D3;
-    color: #000;
-    padding: 15px 20px;
-    border-radius: 8px;
-   /* margin: 10px 0; /*margin for spacing*/
-
-}
-
-#address{
-    font-family: 'lato', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #000;
-    background-color: #F0E4D3;
-    color: #000;
     padding: 15px 20px;
     border-radius: 8px;
    /* margin: 10px 0; /*margin for spacing*/
 }
 
-#phone{
-    font-family: 'lato', sans-serif;
-    font-weight:600;
-    font-size: 1rem;
-    color: #000;
-    background-color: #F0E4D3;
-    color: #000;
-    padding: 15px 20px;
-    border-radius: 8px;
-   /* margin: 10px 0; /*margin for spacing*/
+@media (max-width: 768px) {
+    #email, #address, #phone{
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        font-size: 0.9rem; 
+        padding: 10px 15px; 
+    }
 }
+
