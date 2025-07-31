@@ -1,6 +1,9 @@
 *,*::before, *::after {
     box-sizing: border-box; /*to ensure padding and border are included in element's total width and height*/
 }
+body{
+    scroll-behavior: smooth;
+}
 
 .header{
     position: relative; 
@@ -165,4 +168,61 @@ main, .hero{
     z-index: 3;
     /*border-radius: 50%; /*to make the image circular*/
     /*overflow: hidden; /*to hide overflow content*/
+}
+
+section{
+    padding: 80px 20px;
+    /*min-height: ;*/
+}
+
+#contact{
+    /*background: #F0E4D3; /*background color for the contact section*/
+    /*padding: 50px 0; /*padding for spacing*/
+    text-align: center; /*to center the content*/
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+#email{
+    font-family: 'lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    background-color: #F0E4D3;
+    color: #000;
+    padding: 15px 20px;
+    border-radius: 8px;
+   /* margin: 10px 0; /*margin for spacing*/
+
+}
+
+#address{
+    font-family: 'lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    background-color: #F0E4D3;
+    color: #000;
+    padding: 15px 20px;
+    border-radius: 8px;
+   /* margin: 10px 0; /*margin for spacing*/
+}
+
+#phone{
+    font-family: 'lato', sans-serif;
+    font-weight:600;
+    font-size: 1rem;
+    color: #000;
+    background-color: #F0E4D3;
+    color: #000;
+    padding: 15px 20px;
+    border-radius: 8px;
+   /* margin: 10px 0; /*margin for spacing*/
 }
