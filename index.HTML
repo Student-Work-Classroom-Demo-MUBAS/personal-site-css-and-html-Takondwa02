@@ -106,6 +106,8 @@
                 </div>
             </section>
 
+            
+
             <section class = "contacts-part">
                 <h2 id ="contact">Contacts</h2>
                 <div class = "contact-info">
@@ -115,8 +117,24 @@
                 </div>
             </section>
 
-           
+           <section class="form">
+                <form class="contact-form" action="#" method="post" novalidate>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email-input">Email:</label>
+                    <input type="email" id="email-input" name="email" placeholder="your.email@example.com" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form> 
+            </section>
+
         </main>
     </div>
 </body>
 </html>
+
+
