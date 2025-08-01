@@ -491,7 +491,7 @@ body{
 
 #projects{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     /*padding: 80px 20px;*/
 }
@@ -547,15 +547,23 @@ body{
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
+    /*max-width: 700px;*/
+    text-align: justify;
     color: #000;
     padding: 15px 20px;
     margin: 10px 0; 
+}
+
+#font-weight{
+    font-size: 1.005rem;
+    font-weight: 400;
 }
 
 @media (max-width: 768px) {
     .project-item p{
         font-size: 0.9rem; 
         padding: 10px 15px; 
+        line-height: 1.75;
         margin: 5px 0; 
     }
 }
@@ -564,6 +572,7 @@ body{
     .project-item p{
         font-size: 0.8rem; 
         padding: 5px 10px; 
+        line-height: 1.75;
         margin: 5px 0; 
     }
 }
@@ -653,20 +662,20 @@ body{
 }
 
 @media (max-width: 768px) {
-    .githun-link{
+    .github-link{
         font-size: 0.9rem; 
-        padding: 10px 15px; 
+        padding: 10px 10px; 
     }
 }
 
 @media (max-width: 480px) {
-    .githun-link{
+    .github-link{
         font-size: 0.8rem; 
         padding: 5px 10px; 
     }
 }
 
-.githun-link:hover, .githun-link:focus{
+.github-link:hover, .github-link:focus{
     background-color: #7d8e34;
     color: #ffffff; 
 }
@@ -679,18 +688,19 @@ body{
 }
 
 .about-me-part{
-
+    background-color: #f9f6f0;
+    padding: 40px 0;
 }
 
 #about{
     text-align: center; 
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .about-part p{
     font-family: 'lato', sans-serif;
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.5;
     /*background-color: #;*/
     font-weight: 400;
@@ -715,29 +725,39 @@ body{
 
 .skills-list{
     font-family: "lato", sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 410;
+    list-style: disc inside;
+    column-count: 3;
+    column-gap: 5px;
+    line-height: 0.4;
     color: #000;
-    padding: 15px 20px;
+    padding: 15px 10px;
 }
 
 @media (max-width: 768px) {
     .skills-list{
         font-size: 0.9rem; 
-        padding: 10px 15px; 
+        padding: 10px 5px; 
+        column-count: 1;
+        list-style: disc inside;
     }
 }
 
 @media(max-width: 480px){
     .skills-list{
         font-size:0.8rem;
-        padding: 5px 10px;
+        padding: 5px 2.5px;
+        column-count: 1;
+        list-style: disc inside;
     }
 }
 
 .skills-list li{
-    margin: 10px 20px;
-    padding: 10px 20px
+    margin: 10px 10px;
+    padding: 10px 10px;
+    break-inside: avoid;
+    /*line-height: 1.5;*/
 }
 
 @media(max-width: 768px){
@@ -753,7 +773,8 @@ body{
 }
 
 .contacts-part{
-    padding: 80px 20px;
+    padding: 50px 0px;
+    margin: 0;
     /*min-height: ;*/
 }
 
@@ -762,14 +783,15 @@ body{
     /*background: #F0E4D3; /*background color for the contact section*/
     /*padding: 50px 0; /*padding for spacing*/
     text-align: center; /*to center the content*/
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 @media (max-width: 768px) {
     #contact{
         font-size: 1.5rem; 
-        padding: 30px 10px; 
+        padding: 30px 10px;
+        margin-top: 0; 
     }
 }
 
