@@ -7,67 +7,78 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- header with a navigation -->
-        <header class = "header">       
+    <header class = "header">       
+        <div class = "navbar-container">
+            <div class = "navbar-left">
+                <span class = "site-name">Takondwa Mphande</span>
+            </div>
             <nav class = "navbar">
-                <div class = "navbar-container">
-                    <div class = "navbar-left">
-                        <span class = "site-name">Takondwa Mphande</span>
-                    </div>
-                    <input type = "checkbox" class = "navbar-toggle" id = "navbar-toggle">
-                    <label for = "navbar-toggle" class = "navbar-icon" aria-label = "Toggle navigation">
-                        <span class = "menu-line"></span>
-                        <span class = "menu-line"></span>
-                        <span class = "menu-line"></span>
-                    </label>
-
-                    <ul class = "navbar-right">
-                        <li><a href = "resume.html">Resume</a></li>                    
-                        <li><a href = "#projects">Projects</a></li>
-                        <li><a href = "#about">About Me</a></li>
-                        <li><a href = "#contact">Contact</a></li>
-                    </ul>
-                </div>
+                <ul class = "navbar-right">
+                    <li><a href = "resume.html">Resume</a></li>                    
+                    <li><a href = "#projects">Projects</a></li>
+                    <li><a href = "#about">About Me</a></li>                        
+                    <li><a href = "#contact">Contact</a></li>
+                </ul>   
             </nav>
+        </div>
     </header>
 
-    <main>
-
-    <!-- hero section -->
-    <section class = "hero">
-        <div class = "hero-overlay">
-            <h1 class = "big">My Personal Profile</h1>
-            <div class = "line"></div>
-            <div class = "header-row">
-                <h1 class = "small">
-                    Hi, I am Takondwa Mphande,
-                    welcome to my personal portfolio.
-                </h1>
-                <p class = "description">
-                    I am a fifth year student pursuing Bachelors of Electronics and Computer Engineering at Malawi University of Business and Applied Sciences
-                    (MUBAS). I have a passion for technology and innovation, and I am excited to share my journey with you. This portfolio showcases my skills, projects, and experiences in the field of electronics and computer engineering.
-                </p>
-            </div>
-        </div>
-            <div class = "rect-container">
-                <div class ="rect1"></div>
-                <div class ="rect2"></div>
-                <img src="Images/profile1.JPG" alt="Profile Picture" class ="image"> </img>
+    <div class = "page-content">
+        <main>
+            <!-- hero section -->
+            <section class = "hero">
+                <div class = "hero-overlay">
+                    <h1 class = "big">My Personal Profile</h1>
+                    <div class = "line"></div>
+                    <div class = "header-row">
+                        <h1 class = "small">
+                            Hi, I am Takondwa Mphande,
+                            welcome to my personal portfolio.
+                        </h1>
+                        <p class = "description">
+                            I am a fifth year student pursuing Bachelors of Electronics and Computer Engineering at Malawi University of Business and Applied Sciences
+                            (MUBAS). I have a passion for technology and innovation, and I am excited to share my journey with you. This portfolio showcases my skills, projects, and experiences in the field of electronics and computer engineering.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        <div>
-    </section>
+                    <div class = "rect-container">
+                        <div class ="rect1"></div>
+                        <div class ="rect2"></div>
+                        <img src="Images/profile1.JPG" alt="Profile Picture" class ="image"> </img>
+                        </div>
+                    </div>
+                <div>
+            </section>
 
-     <section>
-        <h2 id ="contact">Contacts</h2>
-        <div class = "contact-info">
-            <p id="email">Email: tkmphande8@gmail.com</p>
-            <p id="address">Adress: Nkolokosa, Blantyre</p>
-            <p id="phone">Phone: +265 888 328 4677</p>
-        </div>
-     </section>
+             <section>
+                <h2 id="projects">Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h3>Project 1: Smart Home Automation</h3>
+                        <p>Description: Developed a smart home system using IoT devices to control lighting and security.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project 2: Weather Monitoring System</h3>
+                        <p>Description: Created a weather station that collects and displays real-time weather data.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project 3: Robotics Project</h3>
+                        <p>Description: Designed and built a robot for automated tasks using Arduino and sensors.</p>
+                    </div>
+                </div>
+            </section>
 
-    </main>
+            <section>
+                <h2 id ="contact">Contacts</h2>
+                <div class = "contact-info">
+                    <p id="email">Email: tkmphande8@gmail.com</p>
+                    <p id="address">Adress: Nkolokosa, Blantyre</p>
+                    <p id="phone">Phone: +265 888 328 4677</p>
+                </div>
+            </section>
 
+           
+        </main>
+    </div>
 </body>
 </html>
