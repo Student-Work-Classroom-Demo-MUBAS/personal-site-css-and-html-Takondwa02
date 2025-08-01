@@ -568,6 +568,115 @@ body{
     }
 }
 
+.project-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+    gap: 20px;
+    margin: 20px 35px;
+}
+
+@media (max-width: 768px) {
+    .project-images{
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin: 10px 10px 
+    }
+}
+
+@media (max-width: 480px) {
+    .project-images{
+        flex-direction: column; 
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        margin: 5px 5px;
+    }
+}
+
+.project-images img{
+    flex: 1 1 calc(33.33% - 20px); /*to allow images to grow and shrink as needed*/
+    max-width: 100%;
+    width: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .project-images img{
+        flex: none;
+        width: 50%;
+        /*max-width: 600px;*/
+        height: auto;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-images img{
+        flex: none;
+        width: 70%;
+        /*max-width: 400px;*/
+        height: auto;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+
+.project-images img:hover{
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; /*smooth transition for hover effect*/
+}
+
+
+.github-link{
+    font-family: 'lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    background-color: #F0E4D3;
+    color: #000;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease; /*smooth transition for hover effect*/
+    padding: 15px 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    text-decoration: none; /*to remove underline from links*/
+
+}
+
+@media (max-width: 768px) {
+    .githun-link{
+        font-size: 0.9rem; 
+        padding: 10px 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .githun-link{
+        font-size: 0.8rem; 
+        padding: 5px 10px; 
+    }
+}
+
+.githun-link:hover, .githun-link:focus{
+    background-color: #7d8e34;
+    color: #ffffff; 
+}
+
+
+.projects-part{
+    background-color: #fdfbf9;
+    padding: 40px 0;
+
+}
 
 .contacts-part{
     padding: 80px 20px;
