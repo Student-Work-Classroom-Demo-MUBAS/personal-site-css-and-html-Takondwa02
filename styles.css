@@ -293,6 +293,19 @@ body{
     }
 }
 
+@media (min-width: 768px) {
+    .header-row{
+        font-size: 1.5rem; 
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        gap: 10px;
+        order: 1;
+        padding: 0 20px 15px 20px; 
+        margin: 0px auto 0px;
+    }
+}
+
 @media (max-width: 480px) {
     .header-row{
         display: flex;
@@ -321,6 +334,15 @@ body{
         text-align: center;
         order: 1;
         padding: 0 20px 15px 20px; 
+        margin: 0px auto 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-row h1{
+        font-size: 1.5rem; 
+        text-align: center;
+        padding: -20px 20px 15px 20px; 
         margin: 0px auto 0px;
     }
 }
@@ -650,6 +672,7 @@ body{
     height: 300px;
 }
 
+
 @media (max-width: 768px) {
     .project-images img{
         flex: none;
@@ -733,7 +756,7 @@ body{
 
 #about{
     text-align: center; 
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     font-weight: bold;
 }
 
@@ -771,6 +794,7 @@ body{
     font-size: 1rem;
     font-weight: 410;
     list-style: disc inside;
+    line-height: 1.5;
     column-gap: 5px;
     line-height: 0.4;
     color: #000;
@@ -779,6 +803,10 @@ body{
 
 .skills-list{
     column-count: 3;
+}
+
+.achievement-list{
+    line-height: 1.5;
 }
 
 @media (max-width: 768px) {
@@ -791,9 +819,15 @@ body{
     }
 }
 
-@media(max-width: 768px){
+@media(min-width: 1000px){
+    .points, .skills-list{
+         line-height: 1;
+    }
+}
+
+@media(min-width: 1000px){
     .skills-list{
-         column-count: 1;
+         column-count: 2;
     }
 }
 
@@ -823,12 +857,21 @@ body{
 @media(max-width: 768px){
     .skills-list li, .achievement-list li, .points li{
         margin: 5px 10px;
+        line-height: 1.5;
+    }
+}
+
+@media(max-width: 1000px){
+    .skills-list li, .achievement-list li, .points li{
+        margin: 5px 10px;
+        line-height: 1.5;
     }
 }
 
 @media(max-width: 480px){
     .skills-list li, .achievement-list li .points li{
         margin: 3px 7px;
+        line-height: 1.5;
     }
 }
 
@@ -911,13 +954,25 @@ body{
 }
 
 .work-experience{
-    font-family: "lato", sans-serif;
     margin: 0;
     padding: 40px 0;
     background-color: #f9f6f0;
 }
 
+@media (max-width: 768px) {
+    .work-experience{
+        line-height: 1.5; 
+    }
+}
+
+@media(max-width: 480px){
+    .work-experience{
+        line-height: 1.5;
+    }
+}
+
 .experience{
+    font-family: "lato", sans-serif;
     margin: 0 20px;
 }
 
